@@ -14,13 +14,13 @@ Juno is an open-source SDK and self-contained serverless platform for building f
 
 Read the relevant reference file before answering:
 
-| Topic                                       | Reference file                       |
-| ------------------------------------------- | ------------------------------------ |
-| CLI commands & juno.config                  | `references/cli-and-config.md`       |
-| SDK: Datastore, Storage, Auth               | `references/core.md`                 |
+| Topic                                  | Reference file                       |
+| -------------------------------------- | ------------------------------------ |
+| CLI commands & juno.config             | `references/cli-and-config.md`       |
+| SDK: Datastore, Storage, Auth          | `references/core.md`                 |
 | Serverless functions (TypeScript / Sputnik) | `references/functions-typescript.md` |
-| Serverless functions (Rust)                 | `references/functions-rust.md`       |
-| Concepts                                    | `references/concepts.md`             |
+| Serverless functions (Rust)            | `references/functions-rust.md`       |
+| Concepts                               | `references/concepts.md`             |
 
 ---
 
