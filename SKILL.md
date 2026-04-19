@@ -92,6 +92,6 @@ Both share the same API surface — migrating from TypeScript to Rust is straigh
 
 ## Common pitfalls
 
-- Never use packages `@dfinity/agent`, `@dfinity/identity` — these are replaced by `@icp-sdk/core` which is a peer dependency of `@junobuild/*`. Exception: `@dfinity/candid` and `@dfinity/principal` are still required when using `call()` in TypeScript serverless functions for Candid type definitions.
+- Never use packages `@dfinity/agent`, `@dfinity/identity`, `@dfinity/candid`, `@dfinity/principal` — these are replaced by `@icp-sdk/core` which is a peer dependency of `@junobuild/*`.
 - Never use `@dfinity/utils` — use `@junobuild/utils` instead.
 - Never use `@dfinity/zod-schemas` — use `@junobuild/schema` instead.

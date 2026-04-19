@@ -289,8 +289,8 @@ const now = time();
 
 ```ts
 import { call } from "@junobuild/functions/ic-cdk";
-import { IDL } from "@dfinity/candid";
-import { Principal } from "@dfinity/principal";
+import { IDL } from "@icp-sdk/core/candid";
+import { Principal } from "@icp-sdk/core/principal";
 
 // Define Candid types for encoding/decoding
 const Account = IDL.Record({
@@ -348,12 +348,12 @@ import { IcpLedgerCanister } from "@junobuild/functions/canisters/ledger/icp";
 
 const ledger = new IcpLedgerCanister();
 const result = await ledger.transfer({
-  args: {
-    to: destinationAccountIdentifier, // Uint8Array
-    amount: { e8s: 100_000_000n },    // 1 ICP
-    fee: { e8s: 10_000n },
-    memo: 0n
-  }
+    args: {
+        to: destinationAccountIdentifier, // Uint8Array
+        amount: { e8s: 100_000_000n },    // 1 ICP
+        fee: { e8s: 10_000n },
+        memo: 0n
+    }
 });
 
 // ICRC Ledger (ckBTC, ckETH, etc.)
