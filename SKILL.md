@@ -79,8 +79,8 @@ Developer
 
 |                            | Rust                             | TypeScript                   |
 | -------------------------- | -------------------------------- | ---------------------------- |
-| Performance                | ✅ Highest                       | ⚠️ Slower (interpreted)      |
-| Library support            | ✅ Many crates                   | ⚠️ Limited Node.js polyfills |
+| Performance                | ✅ Highest                       | Slower (interpreted)         |
+| Library support            | ✅ Many crates                   | Limited Node.js polyfills    |
 | Shared types with frontend | —                                | ✅ Share `j`/Zod schemas     |
 | Recommended for            | Production, performance-critical | Prototypes, quick dev cycles |
 
