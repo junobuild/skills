@@ -1,0 +1,16 @@
+{
+  "name": "@junobuild/skills",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Agent skills for Juno — an open-source SDK for building full-stack web apps.",
+  "license": "MIT",
+  "author": "David Dal Busco <david@fluster.io>",
+  "scripts": {
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.45.0"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
