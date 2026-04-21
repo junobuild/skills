@@ -359,7 +359,7 @@ const result = await ledger.transfer({
 // ICRC Ledger (ckBTC, ckETH, etc.)
 import { IcrcLedgerCanister } from "@junobuild/functions/canisters/ledger/icrc";
 
-const icrc = new IcrcLedgerCanister({ canisterId: "your-icrc-ledger-id" });
+const icrc = new IcrcLedgerCanister({ canisterId: Principal.fromText("your-icrc-ledger-id") });
 const balance = await icrc.icrc1BalanceOf({ account: { owner: Principal.fromText("...") } });
 await icrc.icrc1Transfer({ args: { to: { owner: ... }, amount: 1_000_000n } });
 await icrc.icrc2TransferFrom({ args: { from: ..., to: ..., amount: ... } });
