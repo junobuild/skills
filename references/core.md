@@ -109,13 +109,20 @@ satellite: {
   authentication: {
     google: { clientId: "1234567890-abc.apps.googleusercontent.com" },
     // OR
-    github: { clientId: "your-github-client-id" },
-    // Optional delegation settings:
-    delegation: {
-      allowedTargets: ["<SATELLITE_ID>"],  // null = allow any canister (use with caution)
-      sessionDuration: BigInt(7 * 24 * 60 * 60 * 1_000_000_000)  // 7 days, max 30 days
-    }
+    github: { clientId: "your-github-client-id" }
   }
+}
+```
+
+Each method can optionally be configured with a delegation object. For example:
+
+```ts
+google: {
+    clientId: "1234567890-abc.apps.googleusercontent.com",
+    delegation: {
+        allowedTargets: ["<SATELLITE_ID>"],  // null = allow usage for calling any canister (use with caution)
+        sessionDuration: BigInt(7 * 24 * 60 * 60 * 1_000_000_000)  // e.g. 7 days, max 30 days
+    }
 }
 ```
 
