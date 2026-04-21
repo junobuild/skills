@@ -1,6 +1,6 @@
 {
   "name": "@junobuild/skills",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "description": "Agent skills for Juno — an open-source SDK for building full-stack web apps.",
   "license": "MIT",
