@@ -395,8 +395,12 @@ Not all Node.js APIs are available. What works:
 
 - `console.log` / `console.info` — fully supported, output visible in Satellite logs and Console UI
 - `Math.random()` — supported but seeded once after upgrade, not suitable for lotteries or unpredictable randomness
+- `Blob` — immutable raw binary data
+- `URL` / `URLSearchParams` — URL parsing and manipulation
 
 No `fs`, `http`, `crypto` from Node, and many npm packages that rely on those will not work. Missing polyfills are added iteratively — open an issue if you're blocked.
+
+> For HTTP calls (`fetch`), use `httpRequest` from `@junobuild/functions/ic-cdk` instead.
 
 ---
 
